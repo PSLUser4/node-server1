@@ -2,7 +2,7 @@ const http = require("http");
 
 const server = http.createServer((request, response) =>
 {
-    console.log(`request received : ${request.url}`);
+    console.log(`request URL : ${request.url}`);
 
     if (request.url == "/hello")
     {
