@@ -10,6 +10,10 @@ const server = http.createServer((request, response) =>
         response.write('{"Message" : "Hello world"}');
         response.end();
     }
+    else if (request.url == "/happy")
+    {
+        response.write('{"Message" : "We are all very happy"}');
+    }
     else if (request.url == "/sentence")
     {
         var nouns = ["Apple", "Squirrel", "Lighthouse", "Elephant", "Piano", "Marble", "Rainbow", "Journey", 
